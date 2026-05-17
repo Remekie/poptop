@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<!-- stardust:provenance
+  writtenBy:        stardust:migrate
+  writtenAt:        2026-05-17T03:30:00Z
+  iteration:        1
+  againstDirection: stardust/direction.md
+  variant:          A
+  readArtifacts:
+    - stardust/current/pages/about.json
+    - DESIGN.md
+    - PRODUCT.md
+  synthesizedInputs: []
+  divergenceSeed:   1950s × Plaster cast × Zine × stark-white
+  stardustVersion:  0.2.0
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="We're Jayleen and Ashley — two women who built Poptop because great events deserve better drinks. Custom canned cocktails and mocktails for your event.">
+<title>About — Poptop Cocktails | Edmonton's Custom Canned Cocktail Co.</title>
+
+<!-- ── SEO / GEO ── -->
+<link rel="canonical" href="https://www.poptopcocktails.ca/about">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Poptop Cocktails">
+<meta name="theme-color" content="#000000">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Poptop Cocktails">
+<meta property="og:url" content="https://www.poptopcocktails.ca/about">
+<meta property="og:title" content="About Poptop — Two Women. Zero Boring Drinks.">
+<meta property="og:description" content="We're Jayleen and Ashley — two women who built Poptop because great events deserve better drinks. Custom canned cocktails and mocktails, made in Alberta.">
+<meta property="og:image" content="https://static.wixstatic.com/media/f36ee0_5b62d58f32c245589f0aa457b2e4180e~mv2.png/v1/crop/x_0,y_695,w_1320,h_1233/fill/w_1200,h_630,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_0979_PNG.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Jayleen and Ashley, co-founders of Poptop Cocktails in Edmonton">
+<meta property="og:locale" content="en_CA">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@poptopinc">
+<meta name="twitter:title" content="About Poptop — Two Women. Zero Boring Drinks.">
+<meta name="twitter:description" content="Meet Jayleen and Ashley — the founders who built Poptop because great events deserve better drinks.">
+<meta name="twitter:image" content="https://static.wixstatic.com/media/f36ee0_5b62d58f32c245589f0aa457b2e4180e~mv2.png/v1/crop/x_0,y_695,w_1320,h_1233/fill/w_1200,h_630,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_0979_PNG.png">
+<!-- JSON-LD: AboutPage + Organization + Founders -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": "https://www.poptopcocktails.ca/about#webpage",
+      "url": "https://www.poptopcocktails.ca/about",
+      "name": "About — Poptop Cocktails | Edmonton's Custom Canned Cocktail Co.",
+      "description": "Jayleen and Ashley are the two women behind Poptop — Edmonton's custom canned cocktail and mocktail company. They started Poptop because great events deserve better drinks.",
+      "isPartOf": {"@id": "https://www.poptopcocktails.ca/#website"},
+      "about": {"@id": "https://www.poptopcocktails.ca/#business"},
+      "speakable": {"@type": "SpeakableSpecification", "cssSelector": [".hero-headline", ".origin-heading", ".hero-body"]},
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.poptopcocktails.ca/"},
+          {"@type": "ListItem", "position": 2, "name": "About", "item": "https://www.poptopcocktails.ca/about"}
+        ]
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Jayleen",
+      "jobTitle": "Co-founder",
+      "worksFor": {"@id": "https://www.poptopcocktails.ca/#business"},
+      "description": "Co-founder of Poptop Cocktails. Started the company to bring fully branded, custom canned drinks to events across Alberta."
+    },
+    {
+      "@type": "Person",
+      "name": "Ashley",
+      "jobTitle": "Co-founder",
+      "worksFor": {"@id": "https://www.poptopcocktails.ca/#business"},
+      "description": "Co-founder of Poptop Cocktails. Built the business with Jayleen to give every event a drink worth talking about."
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ─────────────────────────────────────────────────────────
+   Tokens — identical contract to home-proposed.html
+───────────────────────────────────────────────────────── */
+:root {
+  --heading-font-family: 'Bricolage Grotesque', 'Arial Black', sans-serif;
+  --body-font-family:    'Hanken Grotesk', Arial, sans-serif;
+
+  --heading-xxl: clamp(44px, 6.5vw, 80px);
+  --heading-xl:  clamp(32px, 4.5vw, 56px);
+  --heading-lg:  clamp(24px, 3vw,   40px);
+  --heading-md:  clamp(18px, 2.2vw, 28px);
+  --body:        18px;
+  --body-sm:     15px;
+
+  --line-height-heading: 1.05;
+  --line-height-body:    1.6;
+
+  --color-can:    #000000;
+  --color-bg:     #FCFCFC;
+  --color-label:  #FCFCFC;
+  --color-accent: #E8401C;
+  --color-pour:   #E8401C;
+  --color-rim:    #D4D4D4;
+  --color-fg:     #000000;
+
+  --spacing-xs:  4px;
+  --spacing-sm:  8px;
+  --spacing-md:  16px;
+  --spacing-lg:  24px;
+  --spacing-xl:  48px;
+  --spacing-2xl: 96px;
+
+  --section-padding: 96px;
+  --max-width:       1200px;
+  --radius:          0;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--body-font-family);
+  font-size: var(--body);
+  line-height: var(--line-height-body);
+  color: var(--color-fg);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+:focus-visible { outline: 2px solid var(--color-pour); outline-offset: 2px; }
+
+/* ─────────────────────────────────────────────────────────
+   Utilities
+───────────────────────────────────────────────────────── */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.eyebrow {
+  font-family: var(--body-font-family);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.star { font-style: normal; }
+
+/* ─────────────────────────────────────────────────────────
+   Buttons
+───────────────────────────────────────────────────────── */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: var(--color-pour);
+  color: #fff;
+  font-family: var(--body-font-family);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+  transition: opacity 80ms;
+}
+.btn:hover { opacity: 0.88; }
+
+/* ─────────────────────────────────────────────────────────
+   Nav
+───────────────────────────────────────────────────────── */
+header {
+  position: relative;
+  background: var(--color-label);
+  border-bottom: 1px solid var(--color-rim);
+  z-index: 100;
+}
+.nav-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 40px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.nav-logo { display: flex; align-items: center; flex-shrink: 0; }
+.nav-logo img { display: block; height: 48px; width: auto; }
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+}
+.nav-links a {
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-can);
+  transition: opacity 80ms;
+}
+.nav-links a:hover { opacity: 0.55; }
+.nav-links a[aria-current="page"] {
+  font-weight: 700;
+  box-shadow: inset 0 -2px 0 var(--color-pour);
+}
+.nav-book {
+  display: inline-block;
+  padding: 8px 18px;
+  background: var(--color-pour);
+  color: #fff;
+  font-family: var(--body-font-family);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  border-radius: 0;
+  transition: opacity 80ms;
+}
+.nav-book:hover { opacity: 0.88; }
+.nav-toggle { display: none; }
+.nav-toggle-label {
+  display: none;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+.nav-toggle-label span {
+  display: block;
+  height: 2px;
+  background: var(--color-can);
+  border-radius: 1px;
+  transition: 200ms;
+}
+@media (max-width: 768px) {
+  .nav-toggle-label { display: flex; }
+  .nav-links {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: var(--color-can);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    z-index: 200;
+  }
+  .nav-links a { font-size: 28px; font-weight: 700; color: var(--color-label); }
+  .nav-book { font-size: 18px; padding: 14px 32px; }
+  .nav-toggle:checked ~ .nav-links { display: flex; }
+  .nav-toggle:checked ~ .nav-toggle-label span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+    background: var(--color-label);
+  }
+  .nav-toggle:checked ~ .nav-toggle-label span:nth-child(2) { opacity: 0; }
+  .nav-toggle:checked ~ .nav-toggle-label span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+    background: var(--color-label);
+  }
+}
+
+/* ─────────────────────────────────────────────────────────
+   Hero — cinematic full-bleed (identical to home)
+───────────────────────────────────────────────────────── */
+.hero {
+  position: relative;
+  min-height: 100svh;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to top right,
+    rgba(0,0,0,0.90) 0%,
+    rgba(0,0,0,0.65) 28%,
+    rgba(0,0,0,0.22) 58%,
+    transparent 78%
+  );
+  pointer-events: none;
+}
+.hero-visual {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.hero-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 52%;
+  display: block;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 60px 88px;
+  max-width: min(680px, 58vw);
+  margin-left: calc((100vw - var(--max-width)) / 2);
+  display: flex;
+  flex-direction: column;
+}
+.hero-eyebrow {
+  color: rgba(255,255,255,0.55);
+  font-family: var(--body-font-family);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+/* ── Three-line cascade — identical contract to home ── */
+.hero-headline { margin-bottom: 0; }
+.hero-word {
+  display: block;
+  font-family: var(--heading-font-family);
+  font-weight: 800;
+  line-height: 0.88;
+}
+.hero-word--a {
+  font-size: clamp(26px, 3.2vw, 44px);
+  color: rgba(255,255,255,0.55);
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  margin-bottom: 0.05em;
+}
+.hero-word--b {
+  font-size: clamp(72px, 10vw, 136px);
+  color: #fff;
+  letter-spacing: -0.045em;
+  line-height: 0.82;
+}
+.hero-word--c {
+  font-size: clamp(44px, 6vw, 82px);
+  color: var(--color-pour);
+  letter-spacing: -0.03em;
+  line-height: 0.9;
+  margin-top: 0.06em;
+}
+.hero-body {
+  font-size: var(--body);
+  color: rgba(255,255,255,0.75);
+  line-height: var(--line-height-body);
+  max-width: 480px;
+  margin-bottom: 36px;
+}
+@media (max-width: 1240px) { .hero-content { margin-left: 40px; } }
+@media (max-width: 900px) {
+  .hero-content { padding: 0 32px 72px; max-width: 100%; margin-left: 0; }
+}
+
+/* ─────────────────────────────────────────────────────────
+   Origin — split: photo left, story right
+───────────────────────────────────────────────────────── */
+.origin {
+  background: var(--color-label);
+  padding: var(--section-padding) 0;
+}
+.origin-grid {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.origin-photo-wrap {
+  position: relative;
+}
+.origin-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: 50% 0%;
+  display: block;
+}
+/* Pour accent — left edge stripe */
+.origin-photo-wrap::before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: -6px;
+  width: 3px;
+  height: 60%;
+  background: var(--color-pour);
+}
+.origin-eyebrow {
+  color: var(--color-pour);
+  margin-bottom: 20px;
+}
+.origin-heading {
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-xl);
+  font-weight: 800;
+  color: var(--color-can);
+  line-height: var(--line-height-heading);
+  letter-spacing: -0.025em;
+  margin-bottom: 32px;
+}
+.origin-body p {
+  font-size: var(--body);
+  color: var(--color-fg);
+  line-height: var(--line-height-body);
+  margin-bottom: 20px;
+  opacity: 0.85;
+}
+.origin-body p:last-child { margin-bottom: 0; }
+.origin-sign {
+  margin-top: 40px;
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-md);
+  font-weight: 700;
+  color: var(--color-can);
+}
+@media (max-width: 960px) {
+  .origin-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .origin-photo { aspect-ratio: 4 / 3; }
+}
+
+/* ─────────────────────────────────────────────────────────
+   Services — three tiers on dark ground
+───────────────────────────────────────────────────────── */
+.services {
+  background: var(--color-can);
+  padding: var(--section-padding) 0;
+}
+.services-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.services-heading {
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-xl);
+  font-weight: 800;
+  color: var(--color-label);
+  letter-spacing: -0.025em;
+  line-height: var(--line-height-heading);
+  margin-bottom: 64px;
+  max-width: 640px;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+.service-item {
+  background: #141414;
+  padding: 40px 32px;
+}
+.service-num {
+  font-family: var(--heading-font-family);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-pour);
+  margin-bottom: 20px;
+}
+.service-title {
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-md);
+  font-weight: 700;
+  color: var(--color-label);
+  letter-spacing: -0.01em;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+.service-text {
+  font-size: var(--body-sm);
+  color: var(--color-label);
+  opacity: 0.60;
+  line-height: var(--line-height-body);
+}
+@media (max-width: 768px) {
+  .services-grid { grid-template-columns: 1fr; gap: 2px; }
+}
+
+/* ─────────────────────────────────────────────────────────
+   Events — we show up for
+───────────────────────────────────────────────────────── */
+.events-we-serve {
+  background: var(--color-label);
+  padding: var(--section-padding) 0;
+}
+.events-we-serve-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+.events-we-serve-heading {
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-xl);
+  font-weight: 800;
+  color: var(--color-can);
+  letter-spacing: -0.025em;
+  line-height: var(--line-height-heading);
+}
+.events-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.events-list li {
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-md);
+  font-weight: 600;
+  color: var(--color-can);
+  padding: 20px 0;
+  border-bottom: 1px solid var(--color-rim);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  letter-spacing: -0.01em;
+}
+.events-list li::before {
+  content: '★';
+  color: var(--color-pour);
+  font-size: 14px;
+  flex-shrink: 0;
+}
+.events-list li:first-child { border-top: 1px solid var(--color-rim); }
+@media (max-width: 768px) {
+  .events-we-serve-inner { grid-template-columns: 1fr; gap: 48px; }
+}
+
+/* ─────────────────────────────────────────────────────────
+   Review — single quote, dark ground
+───────────────────────────────────────────────────────── */
+.review {
+  background: var(--color-can);
+  padding: var(--section-padding) 0;
+}
+.review-inner {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+}
+.review-stars {
+  font-size: 20px;
+  color: var(--color-pour);
+  letter-spacing: 4px;
+  margin-bottom: 40px;
+}
+.review-quote {
+  font-family: var(--heading-font-family);
+  font-size: clamp(22px, 3vw, 36px);
+  font-weight: 700;
+  color: var(--color-label);
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  margin-bottom: 32px;
+}
+.review-attr {
+  font-family: var(--body-font-family);
+  font-size: var(--body-sm);
+  color: var(--color-rim);
+  font-weight: 500;
+}
+.review-cta {
+  margin-top: 48px;
+}
+.review-cta a {
+  color: var(--color-pour);
+  font-size: var(--body-sm);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--color-pour);
+  padding-bottom: 2px;
+  transition: opacity 80ms;
+}
+.review-cta a:hover { opacity: 0.70; }
+
+/* ─────────────────────────────────────────────────────────
+   Booking CTA band
+───────────────────────────────────────────────────────── */
+.booking {
+  background: var(--color-label);
+  padding: var(--section-padding) 0;
+  text-align: center;
+  border-top: 1px solid var(--color-rim);
+}
+.booking-heading {
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-xl);
+  font-weight: 800;
+  color: var(--color-can);
+  letter-spacing: -0.025em;
+  line-height: var(--line-height-heading);
+  margin-bottom: 12px;
+}
+.booking-sub {
+  font-size: var(--body);
+  color: var(--color-fg);
+  opacity: 0.60;
+  margin-bottom: 40px;
+}
+
+/* ─────────────────────────────────────────────────────────
+   Footer
+───────────────────────────────────────────────────────── */
+.footer {
+  background: var(--color-can);
+  padding: 40px 0;
+}
+.footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.footer-logo { display: flex; align-items: center; flex-shrink: 0; }
+.footer-logo img { display: block; height: 32px; width: auto; filter: invert(1); }
+.footer-copy { font-size: 12px; color: var(--color-rim); }
+.footer-social {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-rim);
+  opacity: 0.65;
+  transition: opacity 80ms;
+}
+.footer-social:hover { opacity: 1; }
+@media (max-width: 640px) { .footer-inner { flex-direction: column; text-align: center; } }
+
+</style>
+</head>
+<body>
+
+<!-- ──────────────── NAV ──────────────── -->
+<header>
+  <div class="nav-inner">
+    <a href="/poptop/" class="nav-logo" aria-label="Poptop Cocktails home">
+      <img src="https://static.wixstatic.com/media/f36ee0_3833a2448c8b427abaee1a5821f5ec0a~mv2.png/v1/fill/w_234,h_69,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/JPG__POPTOP_INC_BLACK_edited_edited.png" alt="Poptop Cocktails" width="117" height="35">
+    </a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </label>
+
+    <ul class="nav-links" role="list">
+      <li><a href="/poptop/">Home</a></li>
+      <li><a href="/poptop/about/" aria-current="page">About</a></li>
+      <li><a href="/poptop/inspiration/">Inspiration</a></li>
+      <li><a href="/poptop/contact/">Contact</a></li>
+      <li><a href="/poptop/contact/" class="nav-book">Book</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+<!-- ──────────────── HERO ──────────────── -->
+<section
+  class="hero"
+  data-section="hero"
+  data-intent="founder introduction"
+  data-layout="full-bleed">
+
+  <div class="hero-visual" aria-hidden="true">
+    <img
+      src="../assets/images/IMG_3535.JPG"
+      alt="Jayleen and Ashley, co-founders of Poptop Cocktails, holding the Poptop banner"
+      loading="eager"
+    >
+  </div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow"><em class="star">★</em> Edmonton · Our Story</p>
+    <h1 class="hero-headline">
+      <span class="hero-word hero-word--a">TWO WOMEN.</span>
+      <span class="hero-word hero-word--b">ONE IDEA.</span>
+      <span class="hero-word hero-word--c">ZERO BORING DRINKS.</span>
+    </h1>
+    <p class="hero-body">We realized nobody was doing this the way it deserved to be done. So we did it ourselves.</p>
+    <a href="/poptop/contact/" class="btn" style="align-self:flex-start">Book Your Experience</a>
+  </div>
+
+</section>
+
+<!-- ──────────────── ORIGIN STORY ──────────────── -->
+<section
+  class="origin"
+  data-section="founder-story"
+  data-intent="human before product"
+  data-layout="split">
+
+  <div class="origin-grid">
+
+    <div class="origin-photo-wrap">
+      <img
+        class="origin-photo"
+        src="https://static.wixstatic.com/media/f36ee0_b1e3a67b7bdf4d12b5728e77a05c735f~mv2.jpg/v1/fill/w_900,h_1400,al_t,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f36ee0_b1e3a67b7bdf4d12b5728e77a05c735f~mv2.jpg"
+        alt="Jayleen and Ashley, founders of Poptop Cocktails"
+        loading="lazy"
+      >
+    </div>
+
+    <div class="origin-copy">
+      <p class="eyebrow origin-eyebrow"><em class="star">★</em> Our story</p>
+      <h2 class="origin-heading">We're Jayleen &amp; Ashley.</h2>
+      <div class="origin-body">
+        <p>Two women who spent years behind both the corporate boardroom table AND the bar — and realized nobody was doing this the way it deserved to be done.</p>
+        <p>Your brand deserves to be on the table. Not a tote bag. Not a pen. A drink — with your logo, your colors, your vibe — handed directly to your guests.</p>
+        <p>You're the creative genius. We're just the vehicle to deliver it. You choose the can design, the flavors, the aesthetic. We show up, we pour, we make your event the one everyone's still talking about.</p>
+      </div>
+      <p class="origin-sign">Girl, let's wow them.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ──────────────── SERVICES ──────────────── -->
+<section
+  class="services"
+  data-section="service-tiers"
+  data-intent="product explanation"
+  data-layout="grid">
+
+  <div class="services-inner">
+    <h2 class="services-heading">Drink options — honestly limitless.</h2>
+
+    <div class="services-grid">
+
+      <div class="service-item">
+        <p class="service-num">01 — Pre-sealed</p>
+        <h3 class="service-title">Ready to hand out.</h3>
+        <p class="service-text">
+          Pre-made and sealed before the event. Juices, smoothies, matcha, iced coffee, iced tea, water, lemonades, sports drinks — your label, your vibe. Perfect for corporate events and gifting.
+        </p>
+      </div>
+
+      <div class="service-item">
+        <p class="service-num">02 — On-site activation</p>
+        <h3 class="service-title">We bring the machine.</h3>
+        <p class="service-text">
+          Mobile canning, live at your event. Alcohol? Yes. No broken glass. Less spillage. Less waste. We use your bar or bring ours. This is the thing people line up for.
+        </p>
+      </div>
+
+      <div class="service-item">
+        <p class="service-num">03 — Custom recipe</p>
+        <h3 class="service-title">Your recipe, our can.</h3>
+        <p class="service-text">
+          You choose the flavor, the label, the aesthetic. We execute it. Wedding date, initials, brand colors — it all goes on the can. This is a memento, not a drink.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ──────────────── EVENTS WE SERVE ──────────────── -->
+<section
+  class="events-we-serve"
+  data-section="event-types"
+  data-intent="discovery — confirm fit"
+  data-layout="split-list">
+
+  <div class="events-we-serve-inner">
+
+    <h2 class="events-we-serve-heading">We show up for all of it.</h2>
+
+    <ul class="events-list">
+      <li>Weddings &amp; Receptions</li>
+      <li>Corporate Events &amp; Meetings</li>
+      <li>Brand Activations &amp; Pop-Ups</li>
+      <li>Birthdays</li>
+      <li>Baby &amp; Bridal Showers</li>
+      <li>Gifting &amp; Retail Collabs</li>
+    </ul>
+
+  </div>
+</section>
+
+<!-- ──────────────── REVIEW ──────────────── -->
+<section
+  class="review"
+  data-section="social-proof"
+  data-intent="trust"
+  data-layout="centered-quote">
+
+  <div class="review-inner">
+    <div class="review-stars" aria-label="Five stars">★★★★★</div>
+    <blockquote class="review-quote">
+      "Had the pleasure of having PopTop drinks at our wedding! They did an awesome job curating drinks with fun custom names on the labels. Super easy to work with and was a massive hit."
+    </blockquote>
+    <p class="review-attr">— Wedding client, Edmonton</p>
+    <p class="review-cta"><a href="https://www.google.com/maps/search/poptop+cocktails" target="_blank" rel="noopener">Read all Google reviews →</a></p>
+  </div>
+
+</section>
+
+<!-- ──────────────── BOOKING CTA ──────────────── -->
+<section
+  class="booking"
+  data-section="booking-cta"
+  data-intent="convert"
+  data-layout="centered">
+
+  <div class="container">
+    <h2 class="booking-heading">Ready to wow them?</h2>
+    <p class="booking-sub">Tell us about your event. We'll handle the rest.</p>
+    <a href="/poptop/contact/" class="btn">Book Your Experience</a>
+  </div>
+
+</section>
+
+</main>
+
+<!-- ──────────────── FOOTER ──────────────── -->
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="/poptop/" class="footer-logo" aria-label="Poptop Cocktails home">
+      <img src="https://static.wixstatic.com/media/f36ee0_3833a2448c8b427abaee1a5821f5ec0a~mv2.png/v1/fill/w_234,h_69,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/JPG__POPTOP_INC_BLACK_edited_edited.png" alt="Poptop Cocktails" width="117" height="35">
+    </a>
+    <span class="footer-copy">© 2025 Poptop Cocktails Inc. All Rights Reserved.</span>
+    <a href="https://instagram.com/poptopinc" target="_blank" rel="noopener" class="footer-social">@poptopinc</a>
+  </div>
+</footer>
+
+</body>
+</html>
