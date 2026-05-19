@@ -44,6 +44,7 @@
       "description": "Jayleen and Ashley are the two women behind Poptop — Edmonton's custom canned cocktail and mocktail company.",
       "isPartOf": {"@id": "https://www.poptopcocktails.ca/#website"},
       "about": {"@id": "https://www.poptopcocktails.ca/#business"},
+      "speakable": {"@type": "SpeakableSpecification", "cssSelector": [".hero-headline", ".origin-heading", ".hero-body"]},
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
@@ -67,6 +68,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" href="/assets/images/IMG_3535.JPG" as="image" fetchpriority="high">
 <link rel="stylesheet" href="/assets/css/main.css">
 
 <style>
@@ -296,7 +298,7 @@
 <!-- HERO -->
 <section class="hero" data-section="hero" data-intent="founder introduction" data-layout="full-bleed">
   <div class="hero-visual" aria-hidden="true">
-    <img src="/assets/images/IMG_3535.JPG" alt="Jayleen and Ashley, co-founders of Poptop Cocktails, holding the Poptop banner" loading="eager">
+    <img src="/assets/images/IMG_3535.JPG" alt="Jayleen and Ashley, co-founders of Poptop Cocktails, holding the Poptop banner" loading="eager" fetchpriority="high" width="1024" height="1536">
   </div>
   <div class="hero-content">
     <p class="hero-eyebrow"><em class="star">★</em> Edmonton · Our Story</p>
@@ -314,7 +316,7 @@
 <section class="origin" data-section="founder-story" data-intent="human before product" data-layout="split">
   <div class="origin-grid">
     <div class="origin-photo-wrap">
-      <img class="origin-photo" src="/assets/images/IMG_3535.JPG" alt="Jayleen and Ashley, founders of Poptop Cocktails" loading="lazy">
+      <img class="origin-photo" src="/assets/images/IMG_3535.JPG" alt="Jayleen and Ashley, founders of Poptop Cocktails" loading="lazy" width="1024" height="1536">
     </div>
     <div class="origin-copy">
       <p class="eyebrow origin-eyebrow"><em class="star">★</em> Our story</p>

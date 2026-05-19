@@ -44,6 +44,7 @@
       "description": "Contact Poptop Cocktails to book custom canned cocktails and mocktails for your event. Based in Edmonton, Alberta.",
       "isPartOf": {"@id": "https://www.poptopcocktails.ca/#website"},
       "about": {"@id": "https://www.poptopcocktails.ca/#business"},
+      "speakable": {"@type": "SpeakableSpecification", "cssSelector": [".hero-headline", ".contact-heading", ".contact-promise"]},
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
@@ -59,6 +60,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" href="/assets/images/can-hers.jpg" as="image" fetchpriority="high">
 <link rel="stylesheet" href="/assets/css/main.css">
 
 <style>
@@ -225,7 +227,7 @@ body { background: var(--color-can); }
 <!-- HERO -->
 <section class="hero" data-section="hero" data-intent="booking entry — convert" data-layout="full-bleed">
   <div class="hero-visual" aria-hidden="true">
-    <img src="/assets/images/can-hers.jpg" alt="Custom canned cocktail — Poptop at your event" loading="eager">
+    <img src="/assets/images/can-hers.jpg" alt="Custom canned cocktail — Poptop at your event" loading="eager" fetchpriority="high" width="370" height="436">
   </div>
   <div class="hero-content">
     <p class="hero-eyebrow"><em class="star">★</em> Edmonton · Book Your Experience</p>
