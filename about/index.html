@@ -93,9 +93,8 @@
 .origin-photo-wrap { position: relative; }
 .origin-photo {
   width: 100%;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 2 / 3;
   object-fit: cover;
-  object-position: 50% 30%;
   display: block;
 }
 .origin-photo-wrap::before {
@@ -132,7 +131,7 @@
 }
 @media (max-width: 960px) {
   .origin-grid { grid-template-columns: 1fr; gap: 48px; }
-  .origin-photo { aspect-ratio: 4 / 3; }
+  .origin-photo { aspect-ratio: 4 / 3; object-fit: cover; }
 }
 
 /* ── Services — three tiers on dark ─────────────── */
