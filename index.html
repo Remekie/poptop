@@ -349,7 +349,11 @@
       border: none; cursor: pointer; transition: background 0.15s; margin-top: 8px;
     }
     .cta-submit:hover { background: #c93416; }
-    .cta-panel-note { font-family: var(--font-body); font-size: 13px; color: rgba(252,252,252,0.4); margin-top: 16px; }
+    .cta-success { display: none; padding: 32px 0 16px; }
+    .cta-success-heading { font-family: var(--font-display); font-size: clamp(28px,3vw,48px); font-weight: 800; color: var(--color-label); text-transform: uppercase; letter-spacing: -0.02em; line-height: 1.0; margin-bottom: 12px; }
+    .cta-success-body { font-family: var(--font-body); font-size: 15px; color: rgba(252,252,252,0.65); line-height: 1.65; }
+    .cta-error { display: none; }
+    .cta-error:not(:empty) { display: block; padding: 10px 14px; background: rgba(255,80,80,0.10); border-left: 3px solid #ff5050; color: #ff8080; font-size: 13px; margin-bottom: 12px; }
     @media (max-width: 900px) {
       .cta-split { grid-template-columns: 1fr; }
       .cta-photo { min-height: 340px; }
@@ -546,14 +550,18 @@
           <p class="cta-panel-eyebrow">Book Your Experience</p>
           <h2 class="cta-panel-title" id="cta-heading">Let's get your event<br>in a can.</h2>
           <p class="cta-panel-copy">Send us a quick note and we'll be in touch within 24 hours to talk flavours, labels, and logistics. No commitment required.</p>
-          <div class="cta-form-prompt">
-            <input type="text" class="cta-field" placeholder="Your name" aria-label="Your name">
-            <input type="email" class="cta-field" placeholder="Email address" aria-label="Email address">
-            <input type="text" class="cta-field" placeholder="Event type &amp; date (e.g. Wedding, July 2026)" aria-label="Event type and date">
-            <textarea class="cta-field" rows="3" placeholder="Tell us about your event…" aria-label="Event details" style="resize:vertical;"></textarea>
-            <a href="/contact/" class="cta-submit" role="button">Send My Enquiry</a>
+          <div data-fs-success class="cta-success">
+            <p class="cta-success-heading">We got it.</p>
+            <p class="cta-success-body">Jayleen or Ashley will follow up within 24 hours.</p>
           </div>
-          <p class="cta-panel-note">Or email us directly at <a href="mailto:hello@poptopcanning.com" style="color:rgba(252,252,252,0.55);text-decoration:underline;">hello@poptopcanning.com</a></p>
+          <div data-fs-error class="cta-error"></div>
+          <form class="cta-form-prompt" id="cta-form">
+            <input type="text" class="cta-field" name="name" placeholder="Your name" aria-label="Your name" required data-fs-field>
+            <input type="email" class="cta-field" name="email" placeholder="Email address" aria-label="Email address" required data-fs-field>
+            <input type="text" class="cta-field" name="event_info" placeholder="Event type &amp; date (e.g. Wedding, July 2026)" aria-label="Event type and date">
+            <textarea class="cta-field" rows="3" name="message" placeholder="Tell us about your event…" aria-label="Event details" style="resize:vertical;" data-fs-field></textarea>
+            <button type="submit" class="cta-submit" data-fs-submit-btn>Send My Enquiry</button>
+          </form>
         </div>
       </div>
     </section>
@@ -601,5 +609,10 @@
     </div>
   </footer>
 
+<script>
+  window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+  formspree('initForm', { formElement: '#cta-form', formId: 'xredqnlg' });
+</script>
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 </html>
