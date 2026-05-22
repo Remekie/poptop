@@ -195,7 +195,8 @@ body { background: var(--color-can); }
   display: none;
   padding: 80px 40px;
   text-align: center;
-  background: #0f0f0f;
+  background: #000 !important;
+  min-height: 400px;
 }
 [data-fs-success] .success-star {
   font-size: 40px;
@@ -207,14 +208,14 @@ body { background: var(--color-can); }
   font-family: var(--heading-font-family);
   font-size: var(--heading-xl);
   font-weight: 800;
-  color: var(--color-label);
+  color: #fcfcfc !important;
   letter-spacing: -0.025em;
   line-height: var(--line-height-heading);
   margin-bottom: 16px;
 }
 [data-fs-success] .success-body {
   font-size: var(--body-sm);
-  color: rgba(255,255,255,0.55);
+  color: rgba(252,252,252,0.65) !important;
   line-height: 1.7;
   margin-bottom: 40px;
   max-width: 360px;
@@ -317,7 +318,7 @@ body { background: var(--color-can); }
 
     <div class="contact-form-wrap" data-column="form">
 
-      <div data-fs-success>
+      <div data-fs-success style="background:#000 !important;color:#fcfcfc;">
         <span class="success-star">★</span>
         <h2 class="success-heading">We got it.</h2>
         <p class="success-body">Jayleen or Ashley will follow up within 24 hours. Check your inbox — a real response is on its way.</p>
