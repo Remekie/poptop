@@ -152,7 +152,7 @@ header {
 }
 
 @media (max-width: 768px) {
-  .nav-toggle-label { display: flex; }
+  .nav-toggle-label { display: flex; position: relative; z-index: 300; }
   .nav-links {
     display: none;
     position: fixed;
