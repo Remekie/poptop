@@ -325,26 +325,27 @@ body { background: var(--color-can); }
       <div data-fs-error></div>
 
       <form class="booking-form" id="booking-form" aria-label="Booking inquiry form">
+        <input type="hidden" name="_subject" value="New booking inquiry — Poptop Cocktails">
 
         <div class="form-row">
           <div class="form-field">
             <label class="form-label" for="name">Your Name</label>
-            <input class="form-input" type="text" id="name" name="name" placeholder="First &amp; last" required autocomplete="name" data-fs-field>
+            <input class="form-input" type="text" id="name" name="Your Name" placeholder="First &amp; last" required autocomplete="name" data-fs-field>
           </div>
           <div class="form-field">
             <label class="form-label" for="email">Email</label>
-            <input class="form-input" type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" data-fs-field>
+            <input class="form-input" type="email" id="email" name="Email" placeholder="you@example.com" required autocomplete="email" data-fs-field>
           </div>
         </div>
         <div class="form-gap"></div>
         <div class="form-row">
           <div class="form-field">
             <label class="form-label" for="phone">Phone</label>
-            <input class="form-input" type="tel" id="phone" name="phone" placeholder="(587) 000-0000" autocomplete="tel" data-fs-field>
+            <input class="form-input" type="tel" id="phone" name="Phone" placeholder="(587) 000-0000" autocomplete="tel" data-fs-field>
           </div>
           <div class="form-field">
             <label class="form-label" for="event-type">Event Type</label>
-            <select class="form-select" id="event-type" name="event_type" required data-fs-field>
+            <select class="form-select" id="event-type" name="Event Type" required data-fs-field>
               <option value="" disabled selected>Select one</option>
               <option value="wedding">Wedding</option>
               <option value="his-hers">His &amp; Hers</option>
@@ -359,11 +360,11 @@ body { background: var(--color-can); }
         <div class="form-row">
           <div class="form-field">
             <label class="form-label" for="event-date">Event Date</label>
-            <input class="form-input" type="date" id="event-date" name="event_date" data-fs-field>
+            <input class="form-input" type="date" id="event-date" name="Event Date" data-fs-field>
           </div>
           <div class="form-field">
             <label class="form-label" for="guests">Guest Count</label>
-            <select class="form-select" id="guests" name="guest_count" data-fs-field>
+            <select class="form-select" id="guests" name="Guest Count" data-fs-field>
               <option value="" disabled selected>Approximate</option>
               <option value="under-50">Under 50</option>
               <option value="50-100">50&#x2013;100</option>
@@ -376,7 +377,7 @@ body { background: var(--color-can); }
         <div class="form-row form-row--full">
           <div class="form-field">
             <label class="form-label" for="message">Tell us about your event</label>
-            <textarea class="form-textarea" id="message" name="message" placeholder="Vibe, theme, location, anything that helps us picture it&#x2026;" data-fs-field></textarea>
+            <textarea class="form-textarea" id="message" name="About Your Event" placeholder="Vibe, theme, location, anything that helps us picture it&#x2026;" data-fs-field></textarea>
           </div>
         </div>
         <div class="form-submit">

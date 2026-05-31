@@ -238,10 +238,11 @@
           </div>
           <div data-fs-error class="cta-error"></div>
           <form class="cta-form-prompt" id="cta-form">
-            <input type="text" class="cta-field" name="name" placeholder="Your name" aria-label="Your name" required data-fs-field>
-            <input type="email" class="cta-field" name="email" placeholder="Email address" aria-label="Email address" required data-fs-field>
-            <input type="text" class="cta-field" name="event_info" placeholder="Event type &amp; date (e.g. Wedding, July 2026)" aria-label="Event type and date">
-            <textarea class="cta-field" rows="3" name="message" placeholder="Tell us about your event…" aria-label="Event details" style="resize:vertical;" data-fs-field></textarea>
+            <input type="hidden" name="_subject" value="New booking inquiry — Poptop Cocktails">
+            <input type="text" class="cta-field" name="Your Name" placeholder="Your name" aria-label="Your name" required data-fs-field>
+            <input type="email" class="cta-field" name="Email" placeholder="Email address" aria-label="Email address" required data-fs-field>
+            <input type="text" class="cta-field" name="Event Info" placeholder="Event type &amp; date (e.g. Wedding, July 2026)" aria-label="Event type and date" data-fs-field>
+            <textarea class="cta-field" rows="3" name="About Your Event" placeholder="Tell us about your event…" aria-label="Event details" style="resize:vertical;" data-fs-field></textarea>
             <button type="submit" class="cta-submit" data-fs-submit-btn>Send My Enquiry</button>
           </form>
         </div>
