@@ -184,7 +184,7 @@ header {
   min-height: 100svh;
   overflow: hidden;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 .hero::before {
   content: '';
@@ -215,7 +215,7 @@ header {
 .hero-content {
   position: relative;
   z-index: 2;
-  padding: 0 60px 88px;
+  padding: clamp(120px, 20vh, 240px) 60px 88px;
   max-width: min(680px, 58vw);
   margin-left: calc((100vw - var(--max-width)) / 2);
   display: flex;
@@ -275,7 +275,7 @@ header {
   margin-bottom: 36px;
 }
 @media (max-width: 900px) {
-  .hero-content { padding: 0 32px 72px; max-width: 100%; margin-left: 0; }
+  .hero-content { padding: clamp(100px, 18vh, 180px) 32px 72px; max-width: 100%; margin-left: 0; }
 }
 
 /* ─── Footer — simple 3-element (about / inspiration / contact) ── */
