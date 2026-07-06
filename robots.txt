@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://remekie.github.io/poptop/sitemap.xml
+Sitemap: https://www.poptopcocktails.ca/sitemap.xml
