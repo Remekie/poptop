@@ -26,7 +26,7 @@
 <meta property="og:image" content="/assets/images/can-his-hers.png">
 <meta property="og:locale" content="en_CA">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@poptopinc">
+<meta name="twitter:site" content="@poptop.inc">
 <meta name="twitter:title" content="Custom Canned Cocktails for Weddings & Events — Edmonton | Poptop">
 <meta name="twitter:description" content="Edmonton's mobile canning bar — His & Hers wedding cocktails, custom recipes, mocktails, corporate events. Every can tells a story.">
 <meta name="twitter:image" content="/assets/images/can-his-hers.png">
@@ -39,14 +39,14 @@
       "@id": "https://www.poptopcocktails.ca/#business",
       "name": "Poptop Cocktails",
       "alternateName": "Poptop Inc",
-      "description": "Custom canned cocktails and mocktails for weddings, corporate events, birthdays, baby showers, and brand collabs across Alberta.",
+      "description": "Custom canned cocktails and mocktails for weddings, corporate events, birthdays, baby showers, and brand collabs. Edmonton-based, open to travel & opportunities everywhere.",
       "url": "https://www.poptopcocktails.ca",
       "logo": { "@type": "ImageObject", "url": "/assets/images/logo.png" },
       "areaServed": [
         {"@type": "City", "name": "Edmonton", "containedIn": {"@type": "AdministrativeArea", "name": "Alberta"}},
         {"@type": "City", "name": "Calgary", "containedIn": {"@type": "AdministrativeArea", "name": "Alberta"}}
       ],
-      "sameAs": ["https://www.instagram.com/poptopinc"]
+      "sameAs": ["https://www.instagram.com/poptop.inc"]
     },
     {
       "@type": "WebSite",
@@ -266,16 +266,33 @@
   object-fit: cover;
   display: block;
 }
-.process-tagline {
-  margin-top: 24px;
-  font-family: var(--body-font-family);
-  font-size: var(--body-sm);
-  font-weight: 700;
-  letter-spacing: 0.10em;
-  text-transform: uppercase;
-  color: var(--color-rim);
-}
-</style>
+  .process-tagline {
+    margin-top: 24px;
+    font-family: var(--body-font-family);
+    font-size: var(--body-sm);
+    font-weight: 700;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    color: var(--color-rim);
+  }
+  .footer-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  .footer-links a {
+    font-size: 13px;
+    color: var(--color-rim);
+    opacity: 0.65;
+    transition: opacity 80ms;
+  }
+  .footer-links a:hover { opacity: 1; }
+
+  @media (max-width: 640px) {
+    .footer-inner { flex-direction: column; text-align: center; gap: 24px; }
+    .footer-links { justify-content: center; flex-wrap: wrap; }
+  }
+  </style>
 </head>
 
 <body data-template="listing">
@@ -294,6 +311,8 @@
       <li><a href="/">Home</a></li>
       <li><a href="/about/">About</a></li>
       <li><a href="/inspiration/" aria-current="page">Inspiration</a></li>
+      <li><a href="/partners/">Partners</a></li>
+      <li><a href="/faq/">FAQ</a></li>
       <li><a href="/contact/">Contact</a></li>
       <li><a href="/contact/" class="nav-book">Book</a></li>
     </ul>
@@ -312,7 +331,7 @@
       loading="eager" fetchpriority="high" width="328" height="441">
   </div>
   <div class="hero-content">
-    <p class="hero-eyebrow"><em class="star">★</em> Edmonton · Our Work</p>
+    <p class="hero-eyebrow"><em class="star">★</em> Edmonton-based · Open to Travel</p>
     <h1 class="hero-headline" aria-label="Every can tells a story">
       <span class="hero-word hero-word--a">EVERY CAN</span>
       <span class="hero-word hero-word--b">TELLS</span>
@@ -426,8 +445,15 @@
     <a href="/" class="footer-logo" aria-label="Poptop Cocktails home">
       <img src="/assets/images/logo.png" alt="Poptop Cocktails" width="117" height="35">
     </a>
+    <ul class="footer-links">
+      <li><a href="/about/">About</a></li>
+      <li><a href="/inspiration/" aria-current="page">Inspiration</a></li>
+      <li><a href="/partners/">Partners</a></li>
+      <li><a href="/faq/">FAQ</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
     <span class="footer-copy">© 2025 Poptop Cocktails Inc. All Rights Reserved.</span>
-    <a href="https://instagram.com/poptopinc" target="_blank" rel="noopener" class="footer-social">@poptopinc</a>
+    <a href="https://instagram.com/poptop.inc" target="_blank" rel="noopener" class="footer-social">@poptop.inc</a>
   </div>
 </footer>
 

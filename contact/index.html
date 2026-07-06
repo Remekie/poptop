@@ -28,7 +28,7 @@
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="en_CA">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@poptopinc">
+<meta name="twitter:site" content="@poptop.inc">
 <meta name="twitter:title" content="Book Custom Canned Cocktails in Edmonton — Poptop Cocktails">
 <meta name="twitter:description" content="Custom canned cocktails for Edmonton weddings, corporate events, and birthdays. We follow up within 24 hours.">
 <meta name="twitter:image" content="/assets/images/can-mocktail.png">
@@ -243,6 +243,23 @@ body { background: var(--color-can); }
 
 /* ── Footer override (dark page needs padding tweak) */
 .footer { padding: 40px 0; }
+.footer-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.footer-links a {
+  font-size: 13px;
+  color: var(--color-rim);
+  opacity: 0.65;
+  transition: opacity 80ms;
+}
+.footer-links a:hover { opacity: 1; }
+
+@media (max-width: 640px) {
+  .footer-inner { flex-direction: column; text-align: center; gap: 24px; }
+  .footer-links { justify-content: center; flex-wrap: wrap; }
+}
 </style>
 </head>
 <body>
@@ -261,6 +278,8 @@ body { background: var(--color-can); }
       <li><a href="/">Home</a></li>
       <li><a href="/about/">About</a></li>
       <li><a href="/inspiration/">Inspiration</a></li>
+      <li><a href="/partners/">Partners</a></li>
+      <li><a href="/faq/">FAQ</a></li>
       <li><a href="/contact/" aria-current="page">Contact</a></li>
       <li><a href="/contact/" class="nav-book">Book</a></li>
     </ul>
@@ -275,7 +294,7 @@ body { background: var(--color-can); }
     <img src="/assets/images/can-hers.jpg" alt="Custom canned cocktail — Poptop at your event" loading="eager" fetchpriority="high" width="370" height="436">
   </div>
   <div class="hero-content">
-    <p class="hero-eyebrow"><em class="star">★</em> Edmonton · Book Your Experience</p>
+    <p class="hero-eyebrow"><em class="star">★</em> Edmonton-based · Open to Travel</p>
     <h1 class="hero-headline">
       <span class="hero-word hero-word--a">LET'S MAKE</span>
       <span class="hero-word hero-word--b">SOMETHING</span>
@@ -296,7 +315,7 @@ body { background: var(--color-can); }
 
         <div class="contact-detail-item">
           <p class="contact-detail-label">Follow us</p>
-          <p class="contact-detail-value"><a href="https://instagram.com/poptopinc" target="_blank" rel="noopener">@poptopinc</a></p>
+          <p class="contact-detail-value"><a href="https://instagram.com/poptop.inc" target="_blank" rel="noopener">@poptop.inc</a></p>
         </div>
         <div class="contact-detail-item">
           <p class="contact-detail-label">Hours</p>
@@ -304,7 +323,7 @@ body { background: var(--color-can); }
         </div>
         <div class="contact-detail-item">
           <p class="contact-detail-label">Area</p>
-          <p class="contact-detail-value">Edmonton &amp; surrounding communities.<br>Open to opportunities across Alberta.</p>
+          <p class="contact-detail-value">Edmonton-based.<br>Open to travel &amp; opportunities worldwide.</p>
         </div>
       </div>
       <div class="contact-promise">
@@ -364,13 +383,14 @@ body { background: var(--color-can); }
           </div>
           <div class="form-field">
             <label class="form-label" for="guests">Guest Count</label>
-            <select class="form-select" id="guests" name="Guest Count" data-fs-field>
-              <option value="" disabled selected>Approximate</option>
-              <option value="under-50">Under 50</option>
-              <option value="50-100">50&#x2013;100</option>
-              <option value="100-200">100&#x2013;200</option>
-              <option value="200-plus">200+</option>
-            </select>
+            <input class="form-input" type="text" id="guests" name="Guest Count" placeholder="e.g. 150 guests" data-fs-field>
+          </div>
+        </div>
+        <div class="form-gap"></div>
+        <div class="form-row form-row--full">
+          <div class="form-field">
+            <label class="form-label" for="referral">How did you hear about Poptop?</label>
+            <input class="form-input" type="text" id="referral" name="Referral Source" placeholder="e.g. Instagram, word of mouth, Google" data-fs-field>
           </div>
         </div>
         <div class="form-gap"></div>
@@ -399,8 +419,15 @@ body { background: var(--color-can); }
     <a href="/" class="footer-logo" aria-label="Poptop Cocktails home">
       <img src="/assets/images/logo.png" alt="Poptop Cocktails" width="117" height="35">
     </a>
-    <p class="footer-copy">&#xA9; 2025 Poptop Cocktails Inc. All rights reserved.</p>
-    <a href="https://instagram.com/poptopinc" class="footer-social" target="_blank" rel="noopener">@poptopinc &#x2192;</a>
+    <ul class="footer-links">
+      <li><a href="/about/">About</a></li>
+      <li><a href="/inspiration/">Inspiration</a></li>
+      <li><a href="/partners/">Partners</a></li>
+      <li><a href="/faq/">FAQ</a></li>
+      <li><a href="/contact/" aria-current="page">Contact</a></li>
+    </ul>
+    <p class="footer-copy">© 2025 Poptop Cocktails Inc. All rights reserved.</p>
+    <a href="https://instagram.com/poptop.inc" class="footer-social" target="_blank" rel="noopener">@poptop.inc</a>
   </div>
 </footer>
 
