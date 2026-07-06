@@ -269,9 +269,10 @@ header {
 }
 .hero-body {
   font-size: var(--body-sm);
-  color: rgba(255,255,255,0.65);
+  color: rgba(255,255,255,0.75);
   line-height: var(--line-height-body);
-  max-width: 400px;
+  max-width: 480px;
+  margin-bottom: 36px;
 }
 @media (max-width: 900px) {
   .hero-content { padding: 0 32px 72px; max-width: 100%; margin-left: 0; }
