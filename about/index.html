@@ -37,6 +37,28 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": ["LocalBusiness", "FoodEstablishment"],
+      "@id": "https://www.poptopcocktails.ca/#business",
+      "name": "Poptop Cocktails",
+      "alternateName": "Poptop Inc",
+      "description": "Custom canned cocktails and mocktails for weddings, corporate events, birthdays, and brand collabs. Edmonton-based, open to travel & opportunities everywhere.",
+      "url": "https://www.poptopcocktails.ca",
+      "logo": { "@type": "ImageObject", "url": "/assets/images/logo.png" },
+      "areaServed": [
+        {"@type": "City", "name": "Edmonton", "containedIn": {"@type": "AdministrativeArea", "name": "Alberta"}},
+        {"@type": "City", "name": "Calgary", "containedIn": {"@type": "AdministrativeArea", "name": "Alberta"}}
+      ],
+      "sameAs": ["https://www.instagram.com/poptop.inc"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.poptopcocktails.ca/#website",
+      "url": "https://www.poptopcocktails.ca",
+      "name": "Poptop Cocktails",
+      "publisher": {"@id": "https://www.poptopcocktails.ca/#business"},
+      "inLanguage": "en-CA"
+    },
+    {
       "@type": "AboutPage",
       "@id": "https://www.poptopcocktails.ca/about/#webpage",
       "url": "https://www.poptopcocktails.ca/about/",
