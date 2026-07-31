@@ -276,6 +276,26 @@ header {
 }
 @media (max-width: 900px) {
   .hero-content { padding: clamp(100px, 18vh, 180px) 32px 72px; max-width: 100%; margin-left: 0; }
+  /* Content is top-anchored, so the scrim has to run top-down on narrow
+     viewports — the diagonal gradient leaves the headline on bare photo. */
+  .hero::before {
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.86) 0%,
+      rgba(0,0,0,0.62) 42%,
+      rgba(0,0,0,0.30) 72%,
+      rgba(0,0,0,0.48) 100%
+    );
+  }
+}
+
+@media (max-width: 600px) {
+  .hero { min-height: 84svh; }
+  .hero-content { padding: 72px 24px 56px; }
+  .hero-eyebrow { margin-bottom: 16px; }
+  .hero-word--a { font-size: clamp(19px, 5.2vw, 26px); }
+  .hero-word--b { font-size: clamp(44px, 14.5vw, 72px); letter-spacing: -0.035em; }
+  .hero-word--c { font-size: clamp(28px, 9vw, 44px); }
 }
 
 /* ─── Footer — simple 3-element (about / inspiration / contact) ── */

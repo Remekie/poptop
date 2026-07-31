@@ -72,9 +72,28 @@ body { background: var(--color-can); color: var(--color-label); }
 .hero-cta:hover { background: #c93416; transform: translateY(-1px); }
 
 @media (max-width: 768px) {
-  .hero-content { bottom: 40px; left: 24px; right: 24px; }
-  .hero-headline { margin-bottom: 28px; }
-  .hero-cta { font-size: 16px; padding: 14px 32px; }
+  /* The banner is a wide 3:2 subject — cover-cropping it into a 100svh
+     portrait frame slices the logo in half. Stack instead: image band on
+     top at close to its native ratio, copy on solid black below. */
+  .hero { height: auto; min-height: 0; display: flex; flex-direction: column; }
+  .hero-bg {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background-position: center;
+  }
+  .hero-bg::after {
+    background: linear-gradient(to top, rgba(0,0,0,0.30) 0%, transparent 40%);
+  }
+  .hero-content {
+    position: relative;
+    bottom: auto; left: auto; right: auto;
+    background: var(--color-can);
+    padding: 32px 24px 48px;
+  }
+  .hero-headline { font-size: clamp(38px, 11.5vw, 56px); margin-bottom: 28px; }
+  .hero-cta { display: block; width: 100%; text-align: center; font-size: 16px; padding: 16px 32px; }
 }
 
 /* ── Tagline band ─────────────────────────── */
